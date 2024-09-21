@@ -3,12 +3,12 @@
 
 <head>
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-W08RT6FPXW"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-W08RT6FPXW&_v=20240921151719"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-W08RT6FPXW');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-W08RT6FPXW');
 	</script>
 	<!-- /Google tag (gtag.js) -->
 	<title>Puer.Software</title>
@@ -63,37 +63,85 @@
 						<span class="text-anim text-inner">Development team</span>
 					</h1>
 					<p class="hero__subtitle subtitle">and core authors of the open-source JS Library - Puer.Js</p>
-					<div class="hero__content">
-						<div class="hero__logo-big">
-							<img src="img/hero-logo-big.webp" alt="Puer software">
-						</div>
-						<div class="hero__code">
-							<div class="hero__code-inner">
-								<img src="img/hero-code.webp" alt="Code">
-								<a href="https://github.com/PuerSoftware/puerjs" target="_blank" class="hero__button button">
-									<span class="button__text">Get started</span>
-									<span class="button__icon"></span>
-								</a>
+				</div>
+				<div class="hero__content">
+					<div class="hero__logo">
+						<img src="img/logo-lg.webp" alt="Puer.Software">
+					</div>
+					<div class="hero__code">
+						<div class="hero__code-inner">
+							<div class="hero__code-area code">
+								<div class="code__item left">
+									<div class="code__tabs">
+										<div class="code__tab selected">app.js
+											<img src="img/icons/icon-cross.svg" alt="Close">
+										</div>
+										<div class="code__tab">main.com</div>
+									</div>
+									<div class="code__body">
+										<pre>
+												<span><span class="line-number">1</span><span class="token-red">import</span> $<span class="token-red">from</span> '../puerjs/index.js'</span>
+												<span><span class="line-number">2</span></span>
+												<span><span class="line-number">3</span>$.application(</span>
+												<span><span class="line-number">4</span>   <span class="token-red">class</span> <span class="token-purple">App</span> <span class="token-red">extends</span> $.App {</span>
+												<span><span class="line-number">5</span>      render() {</span>
+												<span><span class="line-number">6</span>         <span class="token-red">return</span> $.div([</span>
+												<span><span class="line-number">7</span>            $.h1({<span class="token-purple">text</span> : 'Hello, Puer!'}),</span>
+												<span><span class="line-number">8</span>            $.div([</span>
+												<span><span class="line-number">9</span>               $.MyButton('my-button', {</span>
+												<span><span class="line-number">10</span>                 <span class="token-purple">text</span>            : 'Get started',</span>
+												<span><span class="line-number">11</span>                 <span class="token-purple">location</span>     : 'https://puerjs.com'</span>
+												<span><span class="line-number">12</span>              }),</span>
+												<span><span class="line-number">13</span>           ])</span></pre>
+									</div>
+								</div>
+								<div class="code__item right">
+									<div class="code__tabs">
+										<div class="code__tab selected">mybutton.js</div>
+									</div>
+									<div class="code__body">
+										<pre>
+												<span><span class="line-number">1</span><span class="token-red">import</span> $<span class="token-red">from</span> '../puerjs/index.js'</span>
+												<span><span class="line-number">2</span></span>
+												<span><span class="line-number">3</span>   <span class="token-red">export default class</span> <span class="token-purple">MyButton</span> <span class="token-red">extends</span> $.Component {</span>
+												<span><span class="line-number">4</span>      constructor(<span class="token-red">...</span> args)</span>
+												<span><span class="line-number">5</span>         <span class="token-red">super</span>(<span class="token-red">...</span> args)</span>
+												<span><span class="line-number">6</span>         <span class="token-red">this</span>.props.require('text')</span>
+												<span><span class="line-number">7</span>         <span class="token-red">this</span>.props.require('location')</span>
+												<span><span class="line-number">8</span>      }</span>
+												<span><span class="line-number">9</span>      onClick(e) {</span>
+												<span><span class="line-number">10</span>        window.location.href <span class="token-red">= this</span>.props.location</span>
+												<span><span class="line-number">11</span>     }</span>
+												<span><span class="line-number">12</span>     render() {</span>
+												<span><span class="line-number">13</span>        <span class="token-red">return</span> $.div([</span></pre>
+									</div>
+								</div>
 							</div>
+							<a href="https://github.com/PuerSoftware/puerjs" target="_blank" class="hero__button button">
+								<span class="button__text">Get started</span>
+								<span class="button__icon"></span>
+							</a>
 						</div>
 					</div>
-					<div class="hero__partners">
-						<div class="hero__partner-wrapper">
+				</div>
+				<div class="hero__container">
+					<ul class="hero__partners">
+						<li class="hero__partner-wrapper">
 							<img class="hero__partner-inner" src="img/partners/logo-lg.svg" alt="LG">
-						</div>
-						<div class="hero__partner-wrapper">
+						</li>
+						<li class="hero__partner-wrapper">
 							<img class="hero__partner-inner" src="img/partners/logo-google.svg" alt="Google">
-						</div>
-						<div class="hero__partner-wrapper">
+						</li>
+						<li class="hero__partner-wrapper">
 							<img class="hero__partner-inner" src="img/partners/logo-yahoo.svg" alt="Yahoo">
-						</div>
-						<div class="hero__partner-wrapper">
+						</li>
+						<li class="hero__partner-wrapper">
 							<img class="hero__partner-inner" src="img/partners/logo-hp.svg" alt="HP">
-						</div>
-						<div class="hero__partner-wrapper">
+						</li>
+						<li class="hero__partner-wrapper">
 							<img class="hero__partner-inner" src="img/partners/logo-mozilla.svg" alt="Mozilla">
-						</div>
-					</div>
+						</li>
+					</ul>
 					<p class="hero__label text-wrapper"><span class="text-anim text-inner">Our employees have worked with these companies</span></p>
 				</div>
 			</section>
@@ -102,8 +150,8 @@
 					<div class="offers__container">
 						<h2 class="offers__title title text-wrapper"><span class="text-anim text-inner">What we offer</span></h2>
 						<p class="offers__subtitle subtitle">Enterprise quality, affordable, complete web solutions that leverage pre-built architecture and ready professional team.</p>
-						<div class="offers__items">
-							<div class="offers__item">
+						<ul class="offers__items">
+							<li class="offers__item">
 								<img class="offers__item-icon" src="img/icons/icon-backend.webp" alt="Backend">
 								<h3 class="offers__item-title text-wrapper"><span class="text-anim text-inner">Backend Stack</span></h3>
 								<ul class="offers__item-list">
@@ -113,8 +161,8 @@
 									<li class="offers__item-li text-wrapper"><span class="text-anim text-inner">FastAPI with support for REST and Socket APIs</span></li>
 									<li class="offers__item-li text-wrapper"><span class="text-anim text-inner">Kubernetes</span></li>
 								</ul>
-							</div>
-							<div class="offers__item">
+							</li>
+							<li class="offers__item">
 								<img class="offers__item-icon" src="img/icons/icon-frontend.webp" alt="Frontend">
 								<h3 class="offers__item-title text-wrapper"><span class="text-anim text-inner">Frontend Stack</span></h3>
 								<ul class="offers__item-list">
@@ -123,8 +171,8 @@
 									<li class="offers__item-li text-wrapper"><span class="text-anim text-inner">Clear and scalable routing</span></li>
 									<li class="offers__item-li text-wrapper"><span class="text-anim text-inner">JWT Authentication</span></li>
 								</ul>
-							</div>
-						</div>
+							</li>
+						</ul>
 						<p class="offers__label text-wrapper"><span class="text-anim text-inner">All this is already done for you.</span></p>
 					</div>
 				</div>
@@ -184,31 +232,31 @@
 							<span class="text-anim text-inner">Puer.Software</span>
 						</span>
 					</h2>
-					<div class="about__items">
-						<div class="about__item">
-							<img class="about__item-icon" src="img/icons/icon-about-01.webp" alt="About">
+					<ul class="about__items">
+						<li class="about__item">
+							<img class="about__item-icon" src="img/icons/icon-about-01.webp" alt="Experience">
 							<div class="about__item-textbox">
 								<p class="about__item-text">We are a group of seasoned software engineers with 27 years of experience in Silicon Valley.<br>
 									This includes a wide variety of companies from startups to large corporations like LG, Google, Yahoo, HP and Mozilla.</p>
 								<p class="about__item-text">We have done so many web projects, that commonalities between them became obvious. At some point, we have decided to create a common template for Back End as well as Front End.
 								</p>
 							</div>
-						</div>
-						<div class="about__item">
-							<img class="about__item-icon" src="img/icons/icon-about-02.webp" alt="About">
+						</li>
+						<li class="about__item">
+							<img class="about__item-icon" src="img/icons/icon-about-02.webp" alt="Puer project">
 							<div class="about__item-textbox">
 								<p class="about__item-text">This is how Puer Project Groundwork was born.<br>
 									It has a microservice-driven back end where you can add highly extensible apps that also share common functionality like socket communication and asynchronous databases (Postgres with SQLAlchemy). Our back end is written on top of FastAPI – the fastest and cleanest python framework on the Web.+</p>
 								<p class="about__item-text">On the front end we employ PuerJS – a component driven javascript framework. Core developers of this library are also co-founders of Puer.Software, this guarantees that inner works of our code will never be dependent on third party teams.</p>
 							</div>
-						</div>
-						<div class="about__item">
-							<img class="about__item-icon" src="img/icons/icon-about-03.webp" alt="About">
+						</li>
+						<li class="about__item">
+							<img class="about__item-icon" src="img/icons/icon-about-03.webp" alt="Prospects">
 							<div class="about__item-textbox">
 								<p class="about__item-text">This comprises a valuable product that can bootstrap a startup or lay a quality groundwork architecture for web projects of any size.</p>
 							</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<section class="team">
@@ -221,8 +269,8 @@
 						</h2>
 						<p class="team__subtitle subtitle">Our well-tuned team of professionals has proven itself through many software challenges.</p>
 					</div>
-					<div class="team__items">
-						<div class="team__item">
+					<ul class="team__items">
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -233,8 +281,8 @@
 								<h3 class="team__item-title">Project manager</h3>
 								<p class="team__item-text">A job of a project manager to work with the product owner (you) to help you define scope of the project. Budget, timeline, technologies necessary. Then, in communication with the technical team, the project is broken down into stages and tasks. Each task is evaluated in terms of time and resources necessary. Result is communicated back to the product owner.Project manager tracks all tasks and progress in Jira and makes sure that tasks are done on time.</p>
 							</div>
-						</div>
-						<div class="team__item">
+						</li>
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -245,8 +293,8 @@
 								<h3 class="team__item-title">Technical Lead</h3>
 								<p class="team__item-text">Tech lead participates in meetings with the product owner team (along with project manager) to provide technical aspects of the communication. He helps translate business objectives into concrete development tasks and orchestrates the technical team.</p>
 							</div>
-						</div>
-						<div class="team__item">
+						</li>
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -257,8 +305,8 @@
 								<h3 class="team__item-title">Front End Developer</h3>
 								<p class="team__item-text">Front end developer works with presentation part of the code: javascript, css, html. He is an expert in the PuerJS library that is used as a front end framework. He works closely with Back End developers and Designers to create interactive browser experiences for your users.</p>
 							</div>
-						</div>
-						<div class="team__item">
+						</li>
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -269,8 +317,8 @@
 								<h3 class="team__item-title">Back End Developer</h3>
 								<p class="team__item-text">Back end engineers implement business logic and API for front-end consumption. He creates data flow from API to database and back. He works closely with front-end engineers to develop an API that provides communication between front-end and back-end.</p>
 							</div>
-						</div>
-						<div class="team__item">
+						</li>
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -281,8 +329,8 @@
 								<h3 class="team__item-title">Designer</h3>
 								<p class="team__item-text">Designer provides UX and UI mock-ups for front-end developers to implement. Designer participates in meetings with the product owner team to provide expertise on the user experience side of the question. He creates frames and diagrams depicting all stages of user interaction with your application to achieve both ease-of-use and efficiency in reaching business goals. Later, these frames are turned into designs with colors, fonts and graphics to be used as a guideline for front-end implementation.</p>
 							</div>
-						</div>
-						<div class="team__item">
+						</li>
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -293,8 +341,8 @@
 								<h3 class="team__item-title">CSS Developer / Stylist</h3>
 								<p class="team__item-text">Job of a style developer is to “dress up” the front-end functionality according to mock-ups of the designer. He translates colors, fonts and graphics into style code of your app.</p>
 							</div>
-						</div>
-						<div class="team__item">
+						</li>
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -305,8 +353,8 @@
 								<h3 class="team__item-title">Business Analytic / Marketer</h3>
 								<p class="team__item-text">Business analytic works with the product owner team and designers to make sure that all business objectives are met. He provides consulting on SEO optimisation to drive organic traffic from search engines like Google. He provides expertise on how to conduct AB tests, strategies of integration with social network platforms. Creates advertising campaigns, measures site performance to pinpoint bottlenecks and provide ways to optimize them.</p>
 							</div>
-						</div>
-						<div class="team__item">
+						</li>
+						<li class="team__item">
 							<div class="team__item-line-container">
 								<div class="team__item-line"></div>
 								<div class="team__item-stepmarker">
@@ -317,8 +365,8 @@
 								<h3 class="team__item-title">DevOps Engineer</h3>
 								<p class="team__item-text">DevOps engineer conducts deployment of the code to the production and staging servers. He implements deploy–time processes and code checks to host the project in Kubernetes environment in the most efficient way.</p>
 							</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<section class="why">
@@ -367,33 +415,37 @@
 									<div class="why__terminal-tab"></div>
 								</div>
 								<div class="why__terminal-code">
-									<p class="why__terminal-command">~ ev-enclave build - f ./Dockerfile .</p>
+									<p class="why__terminal-command">~/PuerSoftware/groundwork gir:(master)&#177;3</p>
+									<p class="why__terminal-command why__terminal-command--run">poetry run uvicorn src.main:app</p>
 									<p class="why__terminal-result">
-										<span class="code-line">Converting Dockerfile into Docker Image.</span>
-										<span class="code-line">Installing Evervault runtime</span>
-										<span class="code-line">Dockerfile converted!</span>
-										<span class="code-line">Docker Image built!</span>
-										<span class="code-line">Converting Docker Image to Enclave Image.</span>
-										<span class="code-line">Enclave Image created!</span>
-										<span class="code-line">Enclave build complete!</span>
-									</p>
-									<p class="why__terminal-command">~ ev-enclave deploy .</p>
-									<p class="why__terminal-result">
-										<span class="code-line">Zipping Enclave Image.</span>
-										<span class="code-line">Enclave Image.</span>
-										<span class="code-line">Uploading Enclave Image to Evervault.</span>
-										<span class="code-line">Building Enclave Docker Image on Evervault Infrastructure.</span>
-										<span class="code-line">Enclave built on Evervault!</span>
-										<span class="code-line">Deploying Enclave into an AWS Nitro Enclave.</span>
-										<span class="code-line">Starting deployment.</span>
-										<span class="code-line">Waiting for Secure Enclave to be initialized.</span>
-										<span class="code-line">Waiting for your Enclave to become stable.</span>
-										<span class="code-line">Enclave deployed!</span>
-									</p>
-									<p class="why__terminal-command">~ ev-enclave deploy .</p>
-									<p class="why__terminal-result">
-										<span class="code-line">Zipping Enclave Image.</span>
-										<span class="code-line">Enclave Image.</span>
+										<span class="code-line">INFO: Started server process [49808]</span>
+										<span class="code-line">INFO: Waiting for application startup.</span>
+										<span class="code-line">INFO: Application startup complete.</span>
+										<span class="code-line">INFO: Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)</span>
+										<span class="code-line">INFO: 127.0.0.1:56154 - "GET / HTTP/1.1" 404 Not Found</span>
+										<span class="code-line">INFO: 127.0.0.1:56154 - "GET /favicon.ico HTTP/1.1" 404 Not Found</span>
+										<span class="code-line">INFO: 127.0.0.1:56154 - "GET /docs HTTP/1.1" 200 OK</span>
+										<span class="code-line">INFO: 127.0.0.1:56154 - "GET /openapi.json HTTP/1.1" 200 OK</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine select pg_catalog.version()</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine [raw sql] ()</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine select current_schema()</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine [raw sql] ()</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine show standard_conforming_strings</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine [raw sql] ()</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine BEGIN (implicit)</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine SELECT categories.id, categories.name, categories.created_at, categories.updated_at FROM categories</span>
+										<span class="code-line gap">FROM categories</span>
+										<span class="code-line light">INFO sqlalchemy.engine.Engine [generated in 0.00020s] ()</span>
+										<span class="code-line light">INFO sqlalchemy.engine.Engine COMMIT</span>
+										<span class="code-line">INFO: 127.0.0.1:56164 - "GET /category/list HTTP/1.1" 200 OK</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine BEGIN (implicit)</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine SELECT products.id, products.category_id, products.subcategory_id, products.name, products.discount_pct, products.price, products.</span>
+										<span class="code-line">total_count, products.reserved_count, products.created_at, products.updated_at</span>
+										<span class="code-line">FROM products</span>
+										<span class="code-line">WHERE products.total_count > products.reserved_count</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine [generated in 0.00014s] ()</span>
+										<span class="code-line">INFO sqlalchemy.engine.Engine COMMIT</span>
+										<span class="code-line">INFO: 127.0.0.1:36394 - "GET /product/list HTTP/1.1" 200 OK</span>
 									</p>
 								</div>
 							</div>

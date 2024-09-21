@@ -6488,7 +6488,7 @@
     let durationDefault = 1.47;
     let durationDefaultMiddle = 1.3;
     let durationDefaultFaster = .9;
-    gsapWithCSS.from(".hero__logo-big", {
+    gsapWithCSS.from(".hero__logo", {
         opacity: 0,
         duration: durationDefaultMiddle,
         delay: .6,
@@ -6609,7 +6609,7 @@
     });
     gsapWithCSS.utils.toArray(".code-line").forEach((codeLine => {
         const textLength = codeLine.textContent.length;
-        const duration = textLength * .02;
+        const duration = textLength * .006;
         timeline.from(codeLine, {
             display: "none",
             width: 0,
