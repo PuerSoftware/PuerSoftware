@@ -6596,10 +6596,22 @@
             }
         });
     }));
+    gsapWithCSS.from(".letter-anim", {
+        xPercent: -250,
+        scaleX: 6,
+        rotate: 45,
+        duration: durationDefaultMiddle,
+        ease: "secondary-ease",
+        stagger: .1,
+        scrollTrigger: {
+            trigger: ".legend__title-wrapper",
+            start: "top 70%"
+        }
+    });
     const timeline = gsapWithCSS.timeline({
         scrollTrigger: {
             trigger: ".why__terminal",
-            start: "top center",
+            start: "top 60%",
             toggleActions: "play none none none"
         },
         defaults: {
