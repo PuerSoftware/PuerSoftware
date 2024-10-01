@@ -6647,6 +6647,11 @@
         lenis.raf(time * 1e3);
     }));
     gsapWithCSS.ticker.lagSmoothing(0);
+    window.onload = () => {
+        setTimeout((() => {
+            ScrollTrigger_ScrollTrigger.refresh();
+        }), 100);
+    };
     const headerLogo = document.querySelector(".header__logo");
     const subtitles = document.querySelectorAll(".subtitle");
     const btnUp = document.querySelector(".btn-up");
